@@ -1,0 +1,11 @@
+{% block content %}
+{% if flag %}
+
+<form action="{% url 'order:place_order' %}">
+
+</form>
+
+{% else %}
+<h1>Empty cart</h1>
+{% endif %}
+{% endblock %}
